@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizens Lens - Wireframes (5 screens)</title>
+<style>
+  *{box-sizing:border-box} body{margin:0;background:#e8e8e8;color:#222;
+  font-family:system-ui,sans-serif;font-size:15px}
+  h1.top{text-align:center;font-size:18px;padding:14px}
+  .row{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;padding:0 12px 40px}
+  .scr{background:#fff;border:2px solid #999;border-radius:14px;width:300px;overflow:hidden}
+  .scr h2{background:#666;color:#fff;font-size:13px;margin:0;padding:8px 10px}
+  .body{padding:10px;min-height:420px}
+  .box{border:2px dashed #999;border-radius:8px;padding:10px;margin:8px 0;text-align:center;color:#555;font-size:13px}
+  .solid{border-style:solid;background:#f2f2f2}
+  .btn{background:#666;color:#fff;border-radius:8px;padding:10px;text-align:center;margin:8px 0;font-size:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{border:1px solid #999;border-radius:999px;padding:4px 10px;font-size:12px}
+  small{color:#777}
+</style>
+</head>
+<body>
+<h1 class="top">Citizens Lens - Low-fi wireframes (grayscale = layout only, not final colors)</h1>
+<div class="row">
+
+<div class="scr"><h2>S1 - Home</h2><div class="body">
+  <div class="box solid">Logo + tagline</div>
+  <div class="box solid">[ Search bar: ask in plain words ]</div>
+  <div class="btn">Ask</div>
+  <small>Situations</small>
+  <div class="chips"><span class="chip">Arrest</span><span class="chip">Expression</span><span class="chip">Assembly</span><span class="chip">Privacy</span></div>
+  <small>Popular questions</small>
+  <div class="box">Q: rights if arrested?</div>
+  <div class="box">Q: peaceful protest?</div>
+  <div class="box">Q: free expression?</div>
+  <div class="box">Help Now card (below fold)</div>
+</div></div>
+
+<div class="scr"><h2>S2 - Search results</h2><div class="body">
+  <div class="box solid">Query echo: "...arrest..."</div>
+  <div class="box solid"><b>Answer 1:</b> short answer + S35 ref</div>
+  <div class="box solid"><b>Answer 2:</b> short answer + S36 ref</div>
+  <div class="box solid"><b>Answer 3:</b> short answer + S40 ref</div>
+  <div class="box">No-result state: "no confident answer + related topics" + log</div>
+</div></div>
+
+<div class="scr"><h2>S3 - Answer detail (PRD S6)</h2><div class="body">
+  <div class="box solid">1 Short answer (plain)</div>
+  <div class="box">2 What Constitution says</div>
+  <div class="box">3 Read more (collapsed)</div>
+  <div class="box">4 Original provision quote</div>
+  <div class="box">5 Source/version meta</div>
+  <div class="box">6 Related topics</div>
+  <div class="btn">Save / Share buttons</div>
+  <div class="box">Disclaimer: info, not advice</div>
+</div></div>
+
+<div class="scr"><h2>S4 - Explore / Topic</h2><div class="body">
+  <div class="box solid">Situation grid (12)</div>
+  <small>Topic page:</small>
+  <div class="box">What are fundamental rights?</div>
+  <div class="box">Rights covered + provisions</div>
+  <div class="box">Common questions</div>
+  <div class="box">Related lessons</div>
+</div></div>
+
+<div class="scr"><h2>S5 - Learn / Lesson</h2><div class="body">
+  <div class="box solid">Path A: Understand Constitution</div>
+  <div class="box solid">Path B: Real-life situations</div>
+  <div class="box">Progress: 4 of 10 lessons</div>
+  <div class="box">Lesson body (Markdown)</div>
+  <div class="box">Linked provisions</div>
+  <div class="btn">Next lesson</div>
+</div></div>
+
+</div>
+</body>
+</html>
