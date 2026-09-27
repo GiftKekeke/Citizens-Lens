@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BookmarkButton from "../../_components/BookmarkButton";
+import ShareButtons from "../../_components/ShareButtons";
 import {
   getExplanation,
   getProvision,
@@ -30,6 +32,10 @@ export default async function TopicPage({
   return (
     <article className="pt-4">
       <h1 className="text-[22px] font-bold leading-snug">{topic.title}</h1>
+      <div className="mt-2 flex gap-2">
+        <BookmarkButton type="topic" slug={topic.slug} />
+        <ShareButtons />
+      </div>
 
       <div className="explain">
         <span className="tag">Citizens Lens topic</span>

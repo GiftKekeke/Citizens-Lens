@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import LessonComplete from "../../_components/LessonComplete";
+import BookmarkButton from "../../_components/BookmarkButton";
 import ShareButtons from "../../_components/ShareButtons";
 import { getExplanation, getLesson, lessons } from "../../content/data";
 
@@ -28,7 +29,10 @@ export default async function LessonPage({
         {lesson.path === "basics" ? "Understand the Constitution" : "Real-life situation"} · Lesson {lesson.order}
       </p>
       <h1 className="text-[22px] font-bold leading-snug">{lesson.title}</h1>
-      <ShareButtons />
+      <div className="mt-2 flex gap-2">
+        <BookmarkButton type="lesson" slug={lesson.slug} />
+        <ShareButtons />
+      </div>
 
       <div className="explain">
         <span className="tag">Citizens Lens lesson</span>

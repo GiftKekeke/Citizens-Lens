@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BookmarkButton from "../../_components/BookmarkButton";
 import ShareButtons from "../../_components/ShareButtons";
 import {
   explanations,
@@ -24,7 +25,10 @@ export default async function AnswerPage({
   return (
     <article className="pt-4">
       <h1 className="text-[22px] font-bold leading-snug">{ex.question}</h1>
-      <ShareButtons />
+      <div className="mt-2 flex gap-2">
+        <BookmarkButton type="answer" slug={ex.slug} />
+        <ShareButtons />
+      </div>
 
       <div className="explain">
         <span className="tag">Citizens Lens explanation · Short answer</span>
