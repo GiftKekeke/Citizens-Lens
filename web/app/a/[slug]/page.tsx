@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import BookmarkButton from "../../_components/BookmarkButton";
+import FeedbackButtons from "../../_components/FeedbackButtons";
 import ShareButtons from "../../_components/ShareButtons";
 import {
   explanations,
@@ -53,6 +54,18 @@ export default async function AnswerPage({
         </ul>
       </details>
 
+      {provision && provision.status !== "current" && (
+        <div className="disclaimer">
+          <strong>
+            {provision.status === "proposed"
+              ? "Proposed change — not current law."
+              : "Historical text — no longer in force."}
+          </strong>{" "}
+          What follows is {provision.status} material, shown for context. The
+          current law may differ.
+        </div>
+      )}
+
       {provision && (
         <div className="quote">
           <span className="tag">Original provision</span>
@@ -76,6 +89,8 @@ export default async function AnswerPage({
         <strong>Note:</strong> constitutional information, not legal advice.
         Other laws and court decisions can also apply.
       </div>
+
+      <FeedbackButtons slug={ex.slug} />
 
       {ex.relatedSlugs.length > 0 && (
         <div className="mt-4">
