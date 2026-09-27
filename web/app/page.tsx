@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SearchBox from "./_components/SearchBox";
 import { popularQuestions, situations } from "./content/data";
 
 export default function Home() {
@@ -7,23 +8,7 @@ export default function Home() {
       <h1 className="text-[28px] font-extrabold leading-tight">
         Understand your rights in plain language
       </h1>
-      <form action="/search" method="get" className="mt-3 flex gap-2">
-        <input
-          name="q"
-          type="search"
-          required
-          minLength={3}
-          placeholder="Ask, e.g. Can police arrest me without telling me why?"
-          aria-label="Ask a constitutional question"
-          className="min-h-[48px] flex-1 rounded-[10px] border-2 border-[#0E7A3D] px-3 text-base"
-        />
-        <button
-          type="submit"
-          className="min-h-[48px] rounded-[10px] bg-[#0E7A3D] px-5 text-base font-semibold text-white"
-        >
-          Ask
-        </button>
-      </form>
+      <SearchBox />
 
       <h2 className="mt-6 text-[13px] font-bold uppercase tracking-wider text-[#5C665E]">
         Explore by situation

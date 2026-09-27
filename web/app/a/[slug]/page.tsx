@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ShareButtons from "../../_components/ShareButtons";
 import {
   explanations,
   getExplanation,
@@ -23,6 +24,7 @@ export default async function AnswerPage({
   return (
     <article className="pt-4">
       <h1 className="text-[22px] font-bold leading-snug">{ex.question}</h1>
+      <ShareButtons />
 
       <div className="explain">
         <span className="tag">Citizens Lens explanation · Short answer</span>

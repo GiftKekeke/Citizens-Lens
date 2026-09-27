@@ -48,11 +48,77 @@ export function getProvision(id: string) {
   return provisions.find((p) => p.id === id);
 }
 
+function norm(s: string) {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// True if edit distance <= 1 (single substitution, insertion, deletion,
+// or adjacent transposition). Both words must be length 4+.
+function withinOneTypo(a: string, b: string) {
+  if (a === b) return true;
+  const m = a.length;
+  const n = b.length;
+  if (m < 4 || n < 4 || Math.abs(m - n) > 1) return false;
+  if (m === n) {
+    const diffs: number[] = [];
+    for (let i = 0; i < m; i++) if (a[i] !== b[i]) diffs.push(i);
+    if (diffs.length === 1) return true;
+    if (
+      diffs.length === 2 &&
+      diffs[1] === diffs[0] + 1 &&
+      a[diffs[0]] === b[diffs[1]] &&
+      a[diffs[1]] === b[diffs[0]]
+    )
+      return true;
+    return false;
+  }
+  const longer = m > n ? a : b;
+  const shorter = m > n ? b : a;
+  let i = 0;
+  let j = 0;
+  let skipped = false;
+  while (i < longer.length && j < shorter.length) {
+    if (longer[i] === shorter[j]) {
+      i++;
+      j++;
+      continue;
+    }
+    if (skipped) return false;
+    skipped = true;
+    i++; // skip the extra char in the longer word
+  }
+  return true;
+}
+
 export function searchExplanations(query: string): Explanation[] {
-  const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
+  const tokens = norm(query).split(" ").filter(Boolean);
   if (tokens.length === 0) return [];
-  return explanations.filter((e) => {
-    const hay = `${e.question} ${e.shortAnswer} ${e.keywords.join(" ")}`.toLowerCase();
-    return tokens.some((t) => hay.includes(t));
+  const scored = explanations.map((e) => {
+    const hayWords = norm(
+      `${e.question} ${e.shortAnswer} ${e.keywords.join(" ")}`
+    ).split(" ");
+    let score = 0;
+    for (const t of tokens) {
+      if (t.length < 3) continue;
+      for (const w of hayWords) {
+        if (w.length < 3) continue;
+        if (w === t) score += 3;
+        else if (
+          Math.min(w.length, t.length) >= 4 &&
+          (w.startsWith(t) || t.startsWith(w))
+        )
+          score += 2;
+        else if (withinOneTypo(t, w)) score += 1;
+      }
+    }
+    return { e, score };
   });
+  return scored
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map((s) => s.e);
 }

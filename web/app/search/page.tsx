@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NoResultLogger from "../_components/NoResultLogger";
 import { getProvision, searchExplanations } from "../content/data";
 
 export default async function SearchPage({
@@ -16,7 +17,9 @@ export default async function SearchPage({
       <p className="text-[#5C665E]">{query ? `“${query}”` : "Type a question on the Home page."}</p>
 
       {query && results.length === 0 && (
-        <div className="explain mt-4">
+        <>
+          <NoResultLogger query={query} />
+          <div className="explain mt-4">
           <span className="tag">No confident answer</span>
           <p>
             Citizens Lens has no curated answer for this yet. Your question has
@@ -27,7 +30,8 @@ export default async function SearchPage({
               Browse situations
             </Link>
           </p>
-        </div>
+          </div>
+        </>
       )}
 
       <ul className="mt-3 space-y-3">
