@@ -126,13 +126,60 @@ function withinOneTypo(a: string, b: string) {
   return true;
 }
 
+// Common words carry no meaning for matching and only add noise
+// (e.g. "for example" in explanations colliding with query word "exam").
+const STOP = new Set([
+  "what",
+  "does",
+  "mean",
+  "meaning",
+  "example",
+  "examples",
+  "how",
+  "can",
+  "you",
+  "your",
+  "yours",
+  "they",
+  "them",
+  "their",
+  "there",
+  "with",
+  "from",
+  "that",
+  "this",
+  "have",
+  "has",
+  "had",
+  "will",
+  "would",
+  "should",
+  "about",
+  "into",
+  "under",
+  "over",
+  "such",
+  "than",
+  "then",
+  "also",
+  "are",
+  "was",
+  "were",
+  "been",
+  "being",
+]);
+
 export function searchExplanations(query: string): Explanation[] {
-  const tokens = norm(query).split(" ").filter(Boolean);
+  const tokens = norm(query)
+    .split(" ")
+    .filter((t) => t.length >= 3 && !STOP.has(t));
   if (tokens.length === 0) return [];
   const scored = explanations.map((e) => {
     const hayWords = norm(
       `${e.question} ${e.shortAnswer} ${e.keywords.join(" ")}`
-    ).split(" ");
+    )
+      .split(" ")
+      .filter((w) => w.length >= 3 && !STOP.has(w));
     let score = 0;
     for (const t of tokens) {
       if (t.length < 3) continue;

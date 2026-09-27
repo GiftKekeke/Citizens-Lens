@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Visible keyboard focus on all interactive elements. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0e7a3d;
+  outline-offset: 2px;
+}
+
 body {
   background: #f4f6f3;
   color: #1a1a1a;
