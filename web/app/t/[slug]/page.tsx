@@ -77,7 +77,7 @@ export default async function TopicPage({
       <ul className="mt-2 space-y-2">
         {lessons.map((l) => (
           <li key={l.slug} className="rounded-[10px] border border-[#DDE3DE] p-3">
-            <Link href="/learn" className="font-medium text-[#0A5C2E]">
+            <Link href={`/learn/${l.slug}`} className="font-medium text-[#0A5C2E]">
               {l.title}
             </Link>
           </li>

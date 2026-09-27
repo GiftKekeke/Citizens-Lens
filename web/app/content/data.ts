@@ -3,6 +3,7 @@
 
 import provisionsData from "../../content/provisions.json";
 import explanationsData from "../../content/explanations.json";
+import lessonsData from "../../content/lessons.json";
 import metaData from "../../content/meta.json";
 
 export type Provision = {
@@ -42,18 +43,23 @@ export type Lesson = {
   title: string;
   order: number;
   answerSlugs: string[];
+  bodyMd: string;
 };
 
 export const provisions = provisionsData as Provision[];
 export const explanations = explanationsData as Explanation[];
+export const lessons = lessonsData as Lesson[];
 export const situations = (metaData as { situations: Situation[] }).situations;
 export const popularQuestions = (
   metaData as { popularQuestions: PopularQuestion[] }
 ).popularQuestions;
-export const lessons = (metaData as { lessons: Lesson[] }).lessons;
 
 export function getExplanation(slug: string) {
   return explanations.find((e) => e.slug === slug);
+}
+
+export function getLesson(slug: string) {
+  return lessons.find((l) => l.slug === slug);
 }
 
 export function getProvision(id: string) {

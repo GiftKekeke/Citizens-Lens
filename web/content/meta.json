@@ -86,9 +86,5 @@
     { "q": "What does the right to life mean?", "slug": "life-right" },
     { "q": "My rights were violated. What can I do?", "slug": "enforce-rights" },
     { "q": "What duties do I have as a citizen?", "slug": "citizen-duties" }
-  ],
-  "lessons": [
-    { "slug": "what-is-a-constitution", "path": "basics", "title": "What is a constitution?", "order": 1, "answerSlugs": [] },
-    { "slug": "arrested-what-rights", "path": "scenarios", "title": "You're arrested. What are your rights?", "order": 1, "answerSlugs": ["arrest-reasons", "enforce-rights"] }
   ]
 }
