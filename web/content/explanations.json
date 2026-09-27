@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "arrest-reasons",
+    "question": "Can the police arrest me without telling me why?",
+    "keywords": ["arrest", "arrested", "detain", "detained", "detention", "police", "sars", "cell", "custody", "reason", "why", "warrant", "liberty"],
+    "shortAnswer": "No. The police must tell you why you are being arrested. This is part of your right to personal liberty under the Constitution.",
+    "constitutionSays": "Section 35 protects your personal liberty: no one may take it away except for reasons the law allows.",
+    "readMore": "Personal liberty means you cannot be locked up without a lawful reason. If you are arrested, you must be told the reason promptly and brought before a court within a reasonable time. Some situations, such as an arrest under a court order, have extra rules set out in other laws.",
+    "qualifications": [
+      "The Constitution allows exceptions (for example, arrests carrying out a court order).",
+      "Other laws and court decisions also affect arrests — the Constitution is not the whole answer."
+    ],
+    "provisionId": "s35",
+    "relatedSlugs": ["fair-hearing-meaning", "enforce-rights"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "fair-hearing-meaning",
+    "question": "What does the right to fair hearing mean?",
+    "keywords": ["fair", "hearing", "court", "trial", "judge", "case", "lawyer", "justice", "tribunal", "sue"],
+    "shortAnswer": "It means any case about your rights — civil or criminal — must be decided fairly, within a reasonable time, by a proper court or tribunal. You must be given a chance to be heard.",
+    "constitutionSays": "Section 36 gives you the right to a fair hearing within a reasonable time when your civil rights or a criminal charge is being decided.",
+    "readMore": "Fair hearing includes being told what the case against you is, having time and facilities to prepare your defence, and being tried publicly in most cases. Criminal suspects are presumed innocent until proven guilty. The exact protections differ between civil disputes and criminal charges.",
+    "qualifications": [
+      "Protections differ between civil cases and criminal charges.",
+      "Some proceedings (for example involving state security or minors) may limit publicity."
+    ],
+    "provisionId": "s36",
+    "relatedSlugs": ["arrest-reasons", "enforce-rights"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "peaceful-assembly",
+    "question": "Can I peacefully protest?",
+    "keywords": ["protest", "assembly", "demonstration", "march", "rally", "gather", "gathering", "associate", "association", "union", "party"],
+    "shortAnswer": "Yes — the Constitution protects peaceful assembly and association. But the right has limits set by law, for example around public order and the rights of others.",
+    "constitutionSays": "Section 40 protects your right to assemble freely and associate with others, including forming political parties and unions.",
+    "readMore": "You may join groups, attend meetings and take part in peaceful demonstrations. However, Section 45 allows laws that reasonably restrict assembly in the interest of public safety, public order, or protecting other people's rights — for instance, rules about blocking roads.",
+    "qualifications": [
+      "Not an absolute right; public-order laws can limit how and where you assemble.",
+      "Other laws (for example on permits or traffic) may apply to specific gatherings."
+    ],
+    "provisionId": "s40",
+    "relatedSlugs": ["expression-meaning", "arrest-reasons"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "expression-meaning",
+    "question": "What does freedom of expression mean?",
+    "keywords": ["expression", "speech", "speak", "say", "opinion", "press", "media", "newspaper", "journalist", "post", "social media", "criticise", "criticize"],
+    "shortAnswer": "You may hold opinions and share ideas and information without interference — in speech, writing, the press and online. Limits exist, for example against defamation or speech that endangers public safety.",
+    "constitutionSays": "Section 39 protects freedom of expression, including holding opinions and receiving and sharing ideas and information.",
+    "readMore": "Expression covers speaking, writing, journalism and posting online. Section 45 allows reasonable legal limits in the interest of public safety, order, morality, health, or the rights and reputations of others. Other laws — such as on defamation — also apply.",
+    "qualifications": [
+      "Not absolute: defamation and genuine public-safety threats are not protected.",
+      "Owning broadcast media can require government licensing under the Constitution."
+    ],
+    "provisionId": "s39",
+    "relatedSlugs": ["peaceful-assembly", "enforce-rights"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "privacy-meaning",
+    "question": "What does the right to privacy cover?",
+    "keywords": ["privacy", "private", "home", "house", "search", "phone", "letter", "message", "email", "correspondence", "family"],
+    "shortAnswer": "Your home, correspondence, phone calls and private life are protected. Nobody — including the government — may intrude without lawful justification.",
+    "constitutionSays": "Section 37 guarantees and protects the privacy of citizens, their homes, correspondence and telephone conversations.",
+    "readMore": "Privacy covers where you live, what you write and say privately, and your family life. Intrusions such as searches or phone interception generally need a legal basis, such as a court order under a specific law. Reasonable limits for public safety and criminal investigation can apply.",
+    "qualifications": [
+      "Lawful investigations with proper authorisation can limit privacy.",
+      "The details sit mostly in other laws; the Constitution states the guarantee."
+    ],
+    "provisionId": "s37",
+    "relatedSlugs": ["arrest-reasons", "enforce-rights"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "movement-rights",
+    "question": "Can I live and travel anywhere in Nigeria?",
+    "keywords": ["move", "movement", "travel", "relocate", "live", "reside", "residence", "state", "leave", "enter", "passport", "expel"],
+    "shortAnswer": "As a citizen, yes: you may move freely, live in any part of Nigeria, and enter or leave the country. You cannot be expelled from Nigeria.",
+    "constitutionSays": "Section 41 gives every citizen free movement and residence throughout Nigeria, and forbids expelling citizens.",
+    "readMore": "No state may bar citizens from other states from settling there. Limits are possible under laws for public order or health, and non-citizens do not hold this right in the same way — immigration law governs them.",
+    "qualifications": [
+      "Reasonable legal limits (for example quarantine or security zones) can apply.",
+      "This right belongs to citizens; visitors are governed by immigration law."
+    ],
+    "provisionId": "s41",
+    "relatedSlugs": ["discrimination-protection", "citizen-duties"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "religion-belief",
+    "question": "What does freedom of religion cover?",
+    "keywords": ["religion", "religious", "belief", "faith", "church", "mosque", "worship", "pray", "conscience", "convert"],
+    "shortAnswer": "You may hold any belief, change your religion, and practise it through worship, teaching and observance — alone or with others.",
+    "constitutionSays": "Section 38 protects freedom of thought, conscience and religion, including changing your belief and manifesting it.",
+    "readMore": "No one may be forced to adopt a religion, and religious communities may organise and teach. As with other freedoms, reasonable limits for public order, health and other people's rights can apply, and public schools have specific rules about religious instruction.",
+    "qualifications": [
+      "Manifesting belief can be limited where it harms public order or others' rights.",
+      "Employment and school rules may add practical limits."
+    ],
+    "provisionId": "s38",
+    "relatedSlugs": ["expression-meaning", "discrimination-protection"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "discrimination-protection",
+    "question": "What does freedom from discrimination mean?",
+    "keywords": ["discrimination", "discriminate", "tribe", "ethnic", "origin", "sex", "gender", "religion", "equal", "equality", "bias", "favouritism", "favoritism"],
+    "shortAnswer": "No citizen may be given worse treatment just because of their community, ethnicity, birthplace, sex, religion or political opinion.",
+    "constitutionSays": "Section 42 forbids subjecting citizens to special disadvantages because of who they are or where they come from.",
+    "readMore": "This covers access to jobs, services and opportunities under government control. It does not outlaw every difference in treatment — for example, rules tied to residency or qualifications can be lawful — but irrelevant personal characteristics cannot be the basis.",
+    "qualifications": [
+      "Applies to citizens; some roles and benefits may lawfully distinguish (for example by qualification).",
+      "Private disputes often turn on other anti-discrimination and labour laws."
+    ],
+    "provisionId": "s42",
+    "relatedSlugs": ["movement-rights", "enforce-rights"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "property-rights",
+    "question": "Can the government take my land or property?",
+    "keywords": ["property", "land", "house", "acquire", "seize", "demolish", "demolition", "compensation", "own", "ownership", "take over"],
+    "shortAnswer": "You have the right to own property anywhere in Nigeria. The government may only take it compulsorily in the manner the law prescribes — and prompt compensation must be paid, with access to court to challenge it.",
+    "constitutionSays": "Section 43 gives citizens the right to own immovable property anywhere in Nigeria; Section 44 requires lawful process and compensation for compulsory taking.",
+    "readMore": "Compulsory acquisition (for example for roads or public projects) must follow a law, pay compensation promptly, and give you the right to go to court over the amount or your interest. Informal seizure without process violates the Constitution.",
+    "qualifications": [
+      "Compensation disputes go to court — the Constitution guarantees that access.",
+      "Land tenure details (for example under the Land Use Act) sit in other laws."
+    ],
+    "provisionId": "s43",
+    "relatedSlugs": ["enforce-rights", "fair-hearing-meaning"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "life-right",
+    "question": "What does the right to life mean?",
+    "keywords": ["life", "kill", "killing", "death", "die", "murder", "execute", "execution", "death penalty", "abortion"],
+    "shortAnswer": "Every person has the right to life. No one may be intentionally deprived of life except through a court sentence for a criminal offence the law punishes that way.",
+    "constitutionSays": "Section 33 protects life, with narrow exceptions such as execution of a court sentence and force allowed in specific situations.",
+    "readMore": "The exceptions are narrow: lawful court sentences, force to defend a person or property, lawful arrest or escape prevention, and suppressing riot or mutiny. Anything outside these exceptions — including extrajudicial killing — violates the Constitution.",
+    "qualifications": [
+      "Use of force by security agents is only lawful within the listed exceptions.",
+      "How each exception applies depends heavily on the facts and other laws."
+    ],
+    "provisionId": "s33",
+    "relatedSlugs": ["dignity-right", "enforce-rights"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "dignity-right",
+    "question": "What does the right to dignity protect me from?",
+    "keywords": ["dignity", "torture", "inhuman", "degrading", "beat", "beating", "assault", "humiliate", "slavery", "forced labour", "forced labor"],
+    "shortAnswer": "You must be treated with dignity: no torture, inhuman or degrading treatment, slavery or forced labour.",
+    "constitutionSays": "Section 34 entitles every individual to respect for their dignity and bans torture, inhuman or degrading treatment, slavery and forced labour.",
+    "readMore": "This protects you in police custody, workplaces, schools and anywhere else. It covers physical abuse and treatment that humiliates or debases. Limited exceptions exist for things like lawful punishment, military service or community obligations required by law.",
+    "qualifications": [
+      "Lawful sanctions and defined civic duties (for example military service) are carved out.",
+      "Workplace and school cases often also involve labour and education laws."
+    ],
+    "provisionId": "s34",
+    "relatedSlugs": ["life-right", "arrest-reasons"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "citizen-duties",
+    "question": "What duties do I have as a citizen?",
+    "keywords": ["duty", "duties", "responsibility", "obey", "law-abiding", "tax", "vote", "national anthem", "pledge", "respect"],
+    "shortAnswer": "Rights come with duties: obey the Constitution and laws, respect the dignity and rights of others, and contribute positively to your community and country.",
+    "constitutionSays": "Section 24 lists citizens' duties, including abiding by the Constitution, respecting others' rights, and helping advance society.",
+    "readMore": "Duties include respecting the national symbols, paying taxes where due, and helping uphold lawful authority. Duties do not cancel your rights — authorities must still respect the Constitution when dealing with you.",
+    "qualifications": [
+      "Duties are real but do not remove your fundamental rights.",
+      "Specific obligations (for example taxes) are set in other laws."
+    ],
+    "provisionId": "s24",
+    "relatedSlugs": ["movement-rights", "expression-meaning"],
+    "reviewedAt": "2026-09-27"
+  },
+  {
+    "slug": "enforce-rights",
+    "question": "My rights were violated. What can I do?",
+    "keywords": ["violat", "enforce", "court", "sue", "redress", "remedy", "complain", "human rights", "fundamental rights", "high court"],
+    "shortAnswer": "You may apply to a High Court in your state for redress. Courts can order the violation to stop and grant remedies. This is general information — consider speaking to a lawyer.",
+    "constitutionSays": "Section 46 lets anyone who says a Chapter IV right has been, is being, or is likely to be violated apply to the High Court for redress.",
+    "readMore": "Human-rights cases follow a special fast procedure (the Fundamental Rights Enforcement Procedure Rules). You can ask the court to protect you urgently while the case runs. Time limits and procedures matter, so get advice early — community legal-aid organisations can help if you cannot afford a lawyer.",
+    "qualifications": [
+      "This is information about the process, not legal advice for your case.",
+      "Deadlines and procedure affect outcomes — act promptly and get counsel."
+    ],
+    "provisionId": "s46",
+    "relatedSlugs": ["arrest-reasons", "fair-hearing-meaning"],
+    "reviewedAt": "2026-09-27"
+  }
+]

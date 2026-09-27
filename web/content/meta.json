@@ -1,0 +1,34 @@
+{
+  "situations": [
+    { "slug": "arrest-detention", "title": "Arrest & detention" },
+    { "slug": "personal-liberty", "title": "Personal liberty" },
+    { "slug": "expression", "title": "Freedom of expression" },
+    { "slug": "assembly", "title": "Peaceful assembly" },
+    { "slug": "privacy", "title": "Privacy" },
+    { "slug": "property", "title": "Property" },
+    { "slug": "fair-hearing", "title": "Fair hearing" },
+    { "slug": "citizenship", "title": "Citizenship" },
+    { "slug": "elections", "title": "Elections & political participation" },
+    { "slug": "government-powers", "title": "Government powers" },
+    { "slug": "courts", "title": "Courts & justice" },
+    { "slug": "duties", "title": "Duties of citizens" }
+  ],
+  "popularQuestions": [
+    { "q": "What are my rights if I'm arrested?", "slug": "arrest-reasons" },
+    { "q": "Can I peacefully protest?", "slug": "peaceful-assembly" },
+    { "q": "What does freedom of expression mean?", "slug": "expression-meaning" },
+    { "q": "What does fair hearing mean?", "slug": "fair-hearing-meaning" },
+    { "q": "Can the government take my land?", "slug": "property-rights" },
+    { "q": "What does the right to privacy cover?", "slug": "privacy-meaning" },
+    { "q": "Can I live anywhere in Nigeria?", "slug": "movement-rights" },
+    { "q": "What does freedom of religion cover?", "slug": "religion-belief" },
+    { "q": "What is discrimination under the Constitution?", "slug": "discrimination-protection" },
+    { "q": "What does the right to life mean?", "slug": "life-right" },
+    { "q": "My rights were violated. What can I do?", "slug": "enforce-rights" },
+    { "q": "What duties do I have as a citizen?", "slug": "citizen-duties" }
+  ],
+  "lessons": [
+    { "slug": "what-is-a-constitution", "path": "basics", "title": "What is a constitution?", "order": 1 },
+    { "slug": "arrested-what-rights", "path": "scenarios", "title": "You're arrested. What are your rights?", "order": 1 }
+  ]
+}
