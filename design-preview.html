@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizens Lens - Design System Preview</title>
+<style>
+  :root{
+    --green:#0E7A3D; --green-dark:#0A5C2E; --paper:#FFFFFF; --bg:#F4F6F3;
+    --ink:#1A1A1A; --muted:#5C665E; --line:#DDE3DE; --quote-bg:#F0F7F1;
+    --warn-bg:#FFF8E6; --warn-line:#E0B400;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.55}
+  .phone{max-width:480px;margin:0 auto;background:var(--paper);min-height:100vh;
+    border-left:1px solid var(--line);border-right:1px solid var(--line)}
+  header.top{position:sticky;top:0;background:var(--green);color:#fff;padding:14px 16px}
+  header.top h1{margin:0;font-size:20px}
+  header.top p{margin:2px 0 0;font-size:13px;opacity:.9}
+  nav.tabs{display:flex;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:64px}
+  nav.tabs a{flex:1;text-align:center;padding:10px 4px;font-size:14px;color:var(--muted);text-decoration:none}
+  nav.tabs a.on{color:var(--green-dark);font-weight:700;border-bottom:3px solid var(--green)}
+  .wrap{padding:16px}
+  h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:26px 0 8px}
+  .swatches{display:flex;gap:8px}
+  .sw{flex:1;border:1px solid var(--line);border-radius:10px;overflow:hidden;text-align:center;font-size:12px}
+  .sw div{height:44px}
+  .sw span{display:block;padding:4px}
+  .btn{display:inline-block;border:none;border-radius:10px;padding:12px 18px;font-size:16px;cursor:pointer}
+  .btn-p{background:var(--green);color:#fff}
+  .btn-s{background:#fff;color:var(--green-dark);border:2px solid var(--green)}
+  .search{display:flex;gap:8px;margin-top:8px}
+  .search input{flex:1;padding:13px;border:2px solid var(--green);border-radius:10px;font-size:16px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px}
+  /* The 3 critical content styles */
+  .explain{background:#fff;border:1px solid var(--line);border-left:6px solid var(--green);
+    border-radius:10px;padding:14px;margin:10px 0}
+  .explain .tag,.quote .tag,.meta .tag{font-size:12px;font-weight:700;text-transform:uppercase;
+    letter-spacing:.06em;margin-bottom:6px;display:block}
+  .explain .tag{color:var(--green-dark)}
+  .quote{background:var(--quote-bg);border:1px solid var(--green);border-radius:10px;padding:14px;margin:10px 0}
+  .quote .tag{color:var(--green-dark)}
+  .quote blockquote{margin:8px 0 0;padding-left:12px;border-left:3px solid var(--green);font-style:italic}
+  .meta{background:#fff;border:1px dashed var(--muted);border-radius:10px;padding:10px 14px;
+    font-size:13px;color:var(--muted);margin:10px 0}
+  .meta .tag{color:var(--muted)}
+  .disclaimer{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:10px;
+    padding:12px 14px;font-size:14px;margin:12px 0}
+  details.readmore{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0}
+  details.readmore summary{cursor:pointer;font-weight:700;color:var(--green-dark);font-size:16px}
+  footer{padding:20px 16px 40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="phone">
+  <header class="top"><h1>Citizens Lens</h1><p>See your rights clearly</p></header>
+  <nav class="tabs"><a class="on" href="#">Home</a><a href="#">Explore</a><a href="#">Learn</a><a href="#">Saved</a></nav>
+  <div class="wrap">
+
+    <h2 class="sec">1. Colors</h2>
+    <div class="swatches">
+      <div class="sw"><div style="background:#0E7A3D"></div><span>Primary green</span></div>
+      <div class="sw"><div style="background:#0A5C2E"></div><span>Dark green</span></div>
+      <div class="sw"><div style="background:#F0F7F1"></div><span>Quote bg</span></div>
+      <div class="sw"><div style="background:#FFF8E6"></div><span>Warning bg</span></div>
+    </div>
+
+    <h2 class="sec">2. Type (system font, 17px body)</h2>
+    <div style="font-size:28px;font-weight:800">Heading 28px</div>
+    <div style="font-size:20px;font-weight:700">Subheading 20px</div>
+    <p>Body text 17px. Large tap targets, high contrast, one font only. Designed for small Android phones.</p>
+
+    <h2 class="sec">3. Search + buttons</h2>
+    <div class="search"><input value="Can police arrest me without telling me why?"><button class="btn btn-p">Ask</button></div>
+    <div style="margin-top:10px"><button class="btn btn-p">Primary action</button>
+    <button class="btn btn-s">Secondary</button></div>
+
+    <h2 class="sec">4. Explore situations</h2>
+    <div class="chips"><span class="chip">Arrest &amp; detention</span><span class="chip">Free expression</span>
+    <span class="chip">Peaceful assembly</span><span class="chip">Privacy</span><span class="chip">Fair hearing</span></div>
+
+    <h2 class="sec">5. Answer page - the 3 styles that never mix</h2>
+
+    <div class="explain"><span class="tag">Citizens Lens explanation</span>
+      <strong>Short answer:</strong> No. The police must tell you why you are being arrested.
+      This is your right under the Constitution. There are limited exceptions, listed below.
+    </div>
+
+    <details class="readmore" open>
+      <summary>Read more</summary>
+      <p>Personal liberty means you cannot be locked up without a lawful reason. If arrested, you must be told the reason promptly and brought before a court within a reasonable time. Some situations (like a court order) have extra rules.</p>
+    </details>
+
+    <div class="quote"><span class="tag">Original constitutional provision</span>
+      <strong>Section 35, 1999 Constitution (as amended)</strong>
+      <blockquote>"Every person shall be entitled to his personal liberty and no person shall be deprived of such liberty save in the following cases..."</blockquote>
+    </div>
+
+    <div class="meta"><span class="tag">Source / version</span>
+      Chapter IV &bull; Section 35 &bull; Status: current law &bull; Reviewed 2026-09-27
+    </div>
+
+    <div class="disclaimer"><strong>Note:</strong> This is constitutional information, not legal advice. Other laws and court decisions can also apply.</div>
+
+    <h2 class="sec">6. Related topics</h2>
+    <div class="chips"><span class="chip">Personal liberty S35</span><span class="chip">Fair hearing S36</span>
+    <span class="chip">Peaceful assembly S40</span></div>
+
+  </div>
+  <footer>Design preview - mobile-first, single column, min 44px tap targets.</footer>
+</div>
+</body>
+</html>
