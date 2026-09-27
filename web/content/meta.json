@@ -1,17 +1,77 @@
 {
   "situations": [
-    { "slug": "arrest-detention", "title": "Arrest & detention" },
-    { "slug": "personal-liberty", "title": "Personal liberty" },
-    { "slug": "expression", "title": "Freedom of expression" },
-    { "slug": "assembly", "title": "Peaceful assembly" },
-    { "slug": "privacy", "title": "Privacy" },
-    { "slug": "property", "title": "Property" },
-    { "slug": "fair-hearing", "title": "Fair hearing" },
-    { "slug": "citizenship", "title": "Citizenship" },
-    { "slug": "elections", "title": "Elections & political participation" },
-    { "slug": "government-powers", "title": "Government powers" },
-    { "slug": "courts", "title": "Courts & justice" },
-    { "slug": "duties", "title": "Duties of citizens" }
+    {
+      "slug": "arrest-detention",
+      "title": "Arrest & detention",
+      "blurb": "What must happen when police arrest or detain you, and where to turn if it goes wrong.",
+      "answerSlugs": ["arrest-reasons", "enforce-rights"]
+    },
+    {
+      "slug": "personal-liberty",
+      "title": "Personal liberty",
+      "blurb": "Your right not to be locked up without a lawful reason.",
+      "answerSlugs": ["arrest-reasons", "enforce-rights"]
+    },
+    {
+      "slug": "expression",
+      "title": "Freedom of expression",
+      "blurb": "Holding opinions and sharing ideas, in speech, writing, press and online — and its limits.",
+      "answerSlugs": ["expression-meaning"]
+    },
+    {
+      "slug": "assembly",
+      "title": "Peaceful assembly",
+      "blurb": "Gathering, protesting and associating with others peacefully.",
+      "answerSlugs": ["peaceful-assembly", "expression-meaning"]
+    },
+    {
+      "slug": "privacy",
+      "title": "Privacy",
+      "blurb": "Protection for your home, correspondence, calls and private life.",
+      "answerSlugs": ["privacy-meaning"]
+    },
+    {
+      "slug": "property",
+      "title": "Property",
+      "blurb": "Owning property anywhere in Nigeria, and what happens in compulsory acquisition.",
+      "answerSlugs": ["property-rights", "enforce-rights"]
+    },
+    {
+      "slug": "fair-hearing",
+      "title": "Fair hearing",
+      "blurb": "How cases about your rights must be decided — fairly and within reasonable time.",
+      "answerSlugs": ["fair-hearing-meaning", "enforce-rights", "arrest-reasons"]
+    },
+    {
+      "slug": "citizenship",
+      "title": "Citizenship",
+      "blurb": "Belonging, moving and settling freely as a Nigerian citizen. Dedicated citizenship answers are coming — start with these related ones.",
+      "answerSlugs": ["movement-rights", "citizen-duties"]
+    },
+    {
+      "slug": "elections",
+      "title": "Elections & political participation",
+      "blurb": "Taking part in public life — rallies, expression, association. Dedicated election answers are coming — start with these related ones.",
+      "answerSlugs": ["peaceful-assembly", "expression-meaning"]
+    },
+    {
+      "slug": "government-powers",
+      "title": "Government powers",
+      "blurb": "What public authorities may and may not do. Dedicated answers are coming — start with these related ones.",
+      "answerSlugs": ["citizen-duties", "enforce-rights"]
+    },
+    {
+      "slug": "courts",
+      "title": "Courts & justice",
+      "blurb": "Fair trials, enforcing your rights, and what courts can order.",
+      "answerSlugs": ["fair-hearing-meaning", "enforce-rights"]
+    },
+    {
+      "slug": "duties",
+      "title": "Duties of citizens",
+      "blurb": "What the Constitution asks of you alongside your rights.",
+      "answerSlugs": ["citizen-duties"]
+    }
   ],
   "popularQuestions": [
     { "q": "What are my rights if I'm arrested?", "slug": "arrest-reasons" },
@@ -28,7 +88,7 @@
     { "q": "What duties do I have as a citizen?", "slug": "citizen-duties" }
   ],
   "lessons": [
-    { "slug": "what-is-a-constitution", "path": "basics", "title": "What is a constitution?", "order": 1 },
-    { "slug": "arrested-what-rights", "path": "scenarios", "title": "You're arrested. What are your rights?", "order": 1 }
+    { "slug": "what-is-a-constitution", "path": "basics", "title": "What is a constitution?", "order": 1, "answerSlugs": [] },
+    { "slug": "arrested-what-rights", "path": "scenarios", "title": "You're arrested. What are your rights?", "order": 1, "answerSlugs": ["arrest-reasons", "enforce-rights"] }
   ]
 }

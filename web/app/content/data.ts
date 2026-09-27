@@ -13,6 +13,7 @@ export type Provision = {
   version: string;
   status: "current" | "proposed" | "historical";
   effectiveDate: string;
+  chapter: string;
 };
 
 export type Explanation = {
@@ -28,9 +29,20 @@ export type Explanation = {
   reviewedAt: string;
 };
 
-export type Situation = { slug: string; title: string };
+export type Situation = {
+  slug: string;
+  title: string;
+  blurb: string;
+  answerSlugs: string[];
+};
 export type PopularQuestion = { q: string; slug: string };
-export type Lesson = { slug: string; path: string; title: string; order: number };
+export type Lesson = {
+  slug: string;
+  path: string;
+  title: string;
+  order: number;
+  answerSlugs: string[];
+};
 
 export const provisions = provisionsData as Provision[];
 export const explanations = explanationsData as Explanation[];
@@ -46,6 +58,20 @@ export function getExplanation(slug: string) {
 
 export function getProvision(id: string) {
   return provisions.find((p) => p.id === id);
+}
+
+export function getSituation(slug: string) {
+  return situations.find((s) => s.slug === slug);
+}
+
+export function answersForProvision(provisionId: string) {
+  return explanations.filter((e) => e.provisionId === provisionId);
+}
+
+export function lessonsForAnswers(answerSlugs: string[]) {
+  return lessons.filter(
+    (l) => l.path === "basics" || l.answerSlugs.some((s) => answerSlugs.includes(s))
+  );
 }
 
 function norm(s: string) {

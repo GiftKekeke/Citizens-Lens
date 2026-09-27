@@ -17,7 +17,7 @@ export default function Home() {
         {situations.map((s) => (
           <Link
             key={s.slug}
-            href="/explore"
+            href={`/t/${s.slug}`}
             className="min-h-[44px] content-center rounded-full border border-[#DDE3DE] px-4 py-2 text-sm"
           >
             {s.title}

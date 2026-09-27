@@ -27,6 +27,14 @@ for (const e of explanations) {
 }
 for (const q of meta.popularQuestions ?? [])
   if (!slugs.has(q.slug)) errors.push(`popularQuestion "${q.q}": unknown slug ${q.slug}`);
+for (const s of meta.situations ?? []) {
+  if (!s.blurb) errors.push(`situation ${s.slug}: missing blurb`);
+  for (const a of s.answerSlugs ?? [])
+    if (!slugs.has(a)) errors.push(`situation ${s.slug}: unknown answerSlug ${a}`);
+}
+for (const l of meta.lessons ?? [])
+  for (const a of l.answerSlugs ?? [])
+    if (!slugs.has(a)) errors.push(`lesson ${l.slug}: unknown answerSlug ${a}`);
 
 if (errors.length) {
   console.error(`content:check FAILED (${errors.length}):\n- ${errors.join("\n- ")}`);
